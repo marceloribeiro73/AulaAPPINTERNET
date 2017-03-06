@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>EXE Input</title>
+	<style type="text/css">
+		.texto{
+			width: 250px;
+			font-family: sans-serif;
+			font-size: 16px;
+		}
+		.div{
+			border: solid;
+			border-width: 1px;
+			padding-bottom: 2px;
+		}
+	</style>
+</head>
+<body>
+	<script type="text/javascript">
+		function switchText() {
+			var texto = document.getElementById("txtPrimeiro").value;
+			document.getElementById("txtSegundo").value = texto;
+			
+		}
+	</script>
+	<div class="div">
+		<span>Ex: 01 <br/> </span>
+		<span>Primeiro<input type="text" class="texto" id="txtPrimeiro" onblur="switchText()"/></span>
+		<span>Segundo<input type="text" class="texto" id="txtSegundo"/></span>
+	</div>
+
+</body>
+</html>
